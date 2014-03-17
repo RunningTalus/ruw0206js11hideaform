@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ruw0206js11hideaform</title>
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="main-body">	
+		<h1> RefactorU JS11: Hide-A-Form </h1>	
+	<form id="entire-form">
+		<div id="form-user">
+			<div id="form-nme">
+			<input type="text">
+			<label>Name</label>
+			</div>
+			<div id="form-bio">
+			<input type="text">	
+			<label>Bio</label>
+			</div>
+			<div id="form-books">
+			<input type="text">	
+			<label>Books</label>
+			</div>
+			<div id="form-libraries">
+			<input type="text">	
+			<label>Favorite Libraries</label>
+			</div>	
+			<div id="submit-button">
+			<button type="submit">Submit</button>
+			</div>	
+		</div>	
+	</form>
+	<div id="show-hide-button">
+		<button>Edit Profile</button>
+	</div>	
+	<div id="profile-main">
+		<div id="profile-nme">
+			<h2>Name</h2>
+			<p>Juan Valdez</p>
+		</div>
+		<div id="profile-bio">
+			<h2>Bio</h2>
+			<p>I have a donkey and roam the hills of Colombia picking coffee beans!</p>
+		</div>	
+		<div id="profile-books">
+			<h2>Favorite Books</h2>
+			<p>Home Coffee Roasting, Revised, Updated Edition: Romance and Revival, The Devil's Cup: A History of the World According to Coffee, The Coffee Book: Anatomy of an Industry from Crop to the Last Drop
+			</p>
+		</div>
+		<div id="profile-libraries">	
+			<h2>Favorite JavaScript Libraries</h2>
+			<p>node, angular, backbone
+			</p>
+		</div>
+	</div>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="utility.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+<!--JS11: Hide-A-Form
+Objective
+You are responsible for building a profile page for users on a social network. This profile page should give the user the ability to edit their information directly on the page, but we don't want to always show the form. Write an HTML page with a form which will edit the user's profile, but make the form initially hidden and add a 'Show Form' button which will toggle the visibility of the form.
+
+Skills
+DOM Manipulation
+Event Handling
+
+Requirements
+Create all the HTML for your form and profile page. The form should appear on top and the user's profile should appear below. Include separate fields for the following:
+
+name
+bio
+favorite books
+favorite Javascript libraries
+
+Add a submit handler to the form element. On submit, update the text of user's profile below. You will have to cancel the default browser behavior, otherwise the submit will refresh the page.
+
+Change the CSS so that the form is hidden when the page loads.
+
+Add a 'Show Form' button which, when clicked, makes the form visible for the user to edit. ('Toggling' css properties can be done by either with the .css method or the .addid method. Which approach is better?)
+
+When the form is hidden, the button should say 'Show Form'. When the form is shown, the button should say 'Hide Form' and perform the appropriate action.
+Bonus
+
+Add an 'auto-save' feature: Remove the submit button, and add keydown event handlers to the input elements to update the user's profile immediately when any value in the form changes. 
+
+MDN
+val
+Display: None
+Toggle: 
+	Webkit
+Prevent Default

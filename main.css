@@ -1,0 +1,14 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+body{
+	font-size: 25px;
+}
+#entire-form{
+	display: none; 
+	background-color: gray;
+}
+#profile-main{
+	background-color: red;
+}
